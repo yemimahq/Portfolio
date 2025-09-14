@@ -64,21 +64,9 @@ body {
 .card h2{margin:0 0 8px}
 .lead{color:var(--muted);margin:8px 0 0}
 
-.portrait-wrap {
-  width: 260px;
-  height: 260px;
-  overflow: hidden;
-  border-radius: 16px;
-  border: 6px solid #fff;    /* white border */
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1); 
-}
-
-.portrait {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 20%; 
-  display: block;
+.portrait{
+  width:100%;aspect-ratio:1/1;border-radius:16px;object-fit:cover;
+  border:6px solid var(--white);box-shadow:var(--shadow)
 }
 
 
