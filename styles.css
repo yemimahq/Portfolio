@@ -65,7 +65,7 @@ body {
 .lead{color:var(--muted);margin:8px 0 0}
 
 .portrait{
-  width:100%;height: auto;border-radius:18px;object-fit:cover;
+  width:100%;height: auto;border-radius:16px;object-fit:cover;
   border:6px solid var(--white);box-shadow:var(--shadow)
 }
 
