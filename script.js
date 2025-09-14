@@ -1,9 +1,12 @@
+
 (function(){
-  const path = location.pathname.split('/').pop() || 'index.html';
+  const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   document.querySelectorAll('.nav a').forEach(a=>{
-    const target = a.getAttribute('href');
-    if ((path === '' && target === 'index.html') || path === target) {
+    const target = a.getAttribute('href').toLowerCase();
+    if ((page === '' && target === 'index.html') || page === target) {
       a.classList.add('active');
+      a.setAttribute('aria-current','page');
     }
   });
 })();
+
