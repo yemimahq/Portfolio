@@ -2,62 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Home — Portfolio</title>
+  <title>Home — Yemimah Ndoyi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="styles.css" rel="stylesheet" />
+  <!-- include the shared header assets in <head> on each page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Spine + BG -->
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="spine" aria-hidden="true">
-    <div class="brandmark"></div>
-    <nav class="nav" aria-label="Sections">
-      <a href="index.html" title="Home">Home</a>
-      <a href="education.html" title="Education">Education</a>
-      <a href="experience.html" title="Work Experience">Work</a>
-      <a href="extracurriculars.html" title="Extracurriculars">Extra</a>
-    </nav>
-  </div>
-  <div class="bg-orb" aria-hidden="true"></div>
-
-  <main id="main" class="canvas" role="main">
-    <header class="header">
-      <h1 class="page-title">Data Science & Analytics for Healthcare</h1>
-    </header>
-
-    <section class="section hero" aria-label="Intro">
+  <!-- Header + Nav -->
+  <header class="site-header container" role="banner">
+    <div class="brand">
+      <div class="avatar-ring" aria-hidden="true"></div>
       <div>
-        <p>
-          I’m a healthcare-focused data scientist who turns messy clinical and operations data into calm,
-          decision-ready insights. My work spans patient flow, quality metrics, and cost transparency —
-          with empathy for clinicians and patients baked in.
-        </p>
-        <p>
-          Poke around the <em>Education</em>, <em>Work</em>, and <em>Extra</em> pages via the bookmark spine on the left.
-        </p>
+        <p class="name">Yemimah Qeren Ndoyi</p>
+        <p class="tagline">Data Science & Analytics for Healthcare</p>
       </div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Work Experience</a>
+      <a href="extracurriculars.html">Extracurriculars</a>
+    </nav>
+  </header>
 
-      <div class="portrait-wrap">
-        <!-- LOCAL file (no external link) -->
-        <img class="portrait" src="assets/profile.jpg" alt="Portrait" />
-        <div class="portrait-blob"></div>
+  <main class="container">
+    <section class="hero">
+      <!-- LOCAL image only; place /assets/profile.jpg in your repo -->
+      <img class="portrait" src="assets/profile.jpg" alt="Portrait of Yemimah Ndoyi">
+      <div class="card">
+        <h2>Hello! I’m Yemimah.</h2>
+        <p class="lead">
+          I turn healthcare data into clear, decision-ready insights. My interests span population health,
+          clinical quality metrics, and operational analytics—always with empathy for clinicians and patients.
+        </p>
+        <p class="lead">
+          Explore my background using the tabs above, or reach out if you’d like to collaborate.
+        </p>
       </div>
     </section>
 
-    <section class="section" aria-label="Focus Areas">
-      <h2 style="margin:0 0 6px">Focus Areas</h2>
-      <ul style="margin:8px 0 0 18px">
-        <li>Clinical quality analytics (readmissions, LOS, HCAHPS)</li>
-        <li>Operational dashboards for care teams and admin</li>
-        <li>Privacy-first workflows (PHI minimization, role access)</li>
-        <li>Clear visual storytelling for non-technical stakeholders</li>
-      </ul>
+    <section class="section">
+      <div class="card">
+        <h2>Focus Areas</h2>
+        <ul>
+          <li>Data wrangling & visualization for clinical/ops KPIs</li>
+          <li>Predictive modeling for readmissions & length of stay</li>
+          <li>Dashboarding for stakeholders (clinical & admin)</li>
+          <li>Privacy-first analytics with compliance in mind</li>
+        </ul>
+      </div>
     </section>
-
-    <footer class="footer">© <span id="y"></span> Portfolio</footer>
   </main>
+
+  <footer class="footer container">© <span id="y"></span> Yemimah Ndoyi</footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
 
