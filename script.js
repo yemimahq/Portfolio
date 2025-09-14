@@ -1,11 +1,10 @@
-
+// Highlight the current nav item based on URL path or data-page
 (function(){
-  const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const path = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav a').forEach(a=>{
-    const target = a.getAttribute('href').toLowerCase();
-    if ((page === '' && target === 'index.html') || page === target) {
+    const target = a.getAttribute('href');
+    if ((path === '' && target === 'index.html') || path === target) {
       a.classList.add('active');
-      a.setAttribute('aria-current','page');
     }
   });
 })();
