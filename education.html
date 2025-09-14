@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Education — Yemimah Ndoyi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header container" role="banner">
+    <div class="brand">
+      <div class="avatar-ring"></div>
+      <div>
+        <p class="name">Yemimah Qeren Ndoyi</p>
+        <p class="tagline">Data Science & Analytics for Healthcare</p>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Work Experience</a>
+      <a href="extracurriculars.html">Extracurriculars</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Education</h2>
+
+      <article class="item">
+        <h3>B.S. — Data Science (Healthcare Analytics track)</h3>
+        <p class="meta">University Name • City, State • 20XX–20XX</p>
+        <p><strong>Relevant coursework:</strong> Biostatistics, Epidemiology, Database Systems, ML, Data Visualization, Health Informatics.</p>
+        <p><strong>Tools:</strong> Python (Pandas, NumPy, scikit-learn), SQL, Tableau/Power BI.</p>
+      </article>
+
+      <article class="item">
+        <h3>Certifications</h3>
+        <p>HIPAA for Analysts • SQL (Intermediate/Advanced) • Tableau Desktop • Python for Data Analysis</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer container">© <span id="y"></span> Yemimah Ndoyi</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
