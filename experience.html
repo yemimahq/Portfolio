@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Work Experience — Yemimah Ndoyi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header container" role="banner">
+    <div class="brand">
+      <div class="avatar-ring"></div>
+      <div>
+        <p class="name">Yemimah Qeren Ndoyi</p>
+        <p class="tagline">Data Science & Analytics for Healthcare</p>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Work Experience</a>
+      <a href="extracurriculars.html">Extracurriculars</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Work Experience</h2>
+
+      <article class="item">
+        <h3>Data Analyst (Healthcare)</h3>
+        <p class="meta">Organization • City, State • 20XX–Present</p>
+        <ul>
+          <li>Built SQL pipelines and Python notebooks to clean claims/EMR data; reduced report latency by 40%.</li>
+          <li>Created Tableau dashboards for readmissions, LOS, and quality measures; adopted by clinical leadership.</li>
+          <li>Partnered with care teams to define metrics and data dictionaries for reliable decision-making.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <h3>Data Science Intern</h3>
+        <p class="meta">Organization • City, State • 20XX–20XX</p>
+        <ul>
+          <li>Developed a logistic model to flag high-risk discharges; improved precision vs baseline by 12 p.p.</li>
+          <li>Implemented privacy-aware workflows with role-based access to PHI and audit logging.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer container">© <span id="y"></span> Yemimah Ndoyi</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
