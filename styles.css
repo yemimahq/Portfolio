@@ -90,7 +90,7 @@ body {
   content: "";
   position: absolute;
   inset: 0; /* fill the section */
-  background: url("Logo.png") no-repeat center 20%;
+  background: url("Logo.png") no-repeat center 10%;
   background-size: 220px auto; /* adjust logo size */
   opacity: 0.05;  /* faint watermark */
   pointer-events: none; /* makes sure it doesn’t block clicks */
