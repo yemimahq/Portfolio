@@ -80,6 +80,7 @@ body {
 @media (max-width:780px){
   .hero{grid-template-columns:1fr}
 }
+
 .section.education {
   position: relative;
   background: #fff;   /* keeps section background white */
@@ -90,7 +91,7 @@ body {
   content: "";
   position: absolute;
   inset: 0; /* fill the section */
-  background: url("Logo.png") no-repeat center;
+  background: url("Logo.png") no-repeat center 20%;
   background-size: 220px auto; /* adjust logo size */
   opacity: 0.05;  /* faint watermark */
   pointer-events: none; /* makes sure it doesn’t block clicks */
