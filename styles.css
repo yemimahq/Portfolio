@@ -82,8 +82,7 @@ body {
 }
 
 .section.education {
-  position: relative;
-  background: #fff;   /* keeps section background white */
+  position: relative;  /* keeps section background white */
   overflow: hidden;
 }
 
