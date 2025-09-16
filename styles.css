@@ -81,11 +81,6 @@ body {
   .hero{grid-template-columns:1fr}
 }
 
-.section.education {
-  position: relative;  /* keeps section background white */
-  overflow: hidden;
-}
-
 .section.education::before {
   content: "";
   position: absolute;
